@@ -9,9 +9,10 @@
   "scripts": {
     "postinstall": "yarn-prisma:generate",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/shared/infra/http/server.js",
     "prisma:studio": "prisma studio --schema=./src/shared/infra/prisma/schema.prisma" ,
     "prisma:migrate": "prisma migrate dev --schema=./src/shared/infra/prisma/schema.prisma" ,
-    "prisma:generate": "prisma generate --schema=./src/shared/infra/prisma/schema.prisma",
+    "prisma:generate": "prisma generate --schema=./src/shared/infra/prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
